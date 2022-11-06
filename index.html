@@ -92,6 +92,9 @@
       flex-wrap: wrap;
     }
     @media (max-width: 400px) {
+      .navbar-brand {
+        margin-left: 20px;
+      }
       h1 {
         font-size: 48px;
         line-height: 1.5;
@@ -100,9 +103,29 @@
         font-size: 32px;
         text-align: center;
       }
+      h4 {
+        font-size: 32px;
+        text-align: center;
+      }
 
       p {
         text-align: center;
+      }
+      img {
+        display: none;
+      }
+      .weather-container {
+        margin: 40px;
+        display: block;
+        text-align: center;
+      }
+      .yoga-container {
+        margin: 40px;
+        display: block;
+        text-align: center;
+      }
+      .yogurt-bttn {
+        margin-top: 40px;
       }
     }
   </style>
@@ -164,41 +187,49 @@
         >About Me</a
       >
     </div>
-    <div class="container container-fluid mt-5">
-      <div class="row">
-        <div class="column col-sm-6">
-          <img
-            src="/imagez/yoga.png"
-            class="img-fluid rounded"
-            alt="woman streching in tree pose yoga"
-          />
-        </div>
-        <div class="column col-sm-6">
-          <h4 class="mb-3">Yoga app</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mt-5">
-            <a class="primary-link text-white" href="#" title="learn yoga poses"
-              >Launch Yoga App</a
-            >
+    <div class="yoga-container">
+      <div class="container container-fluid mt-5">
+        <div class="row">
+          <div class="column col-sm-6">
+            <img
+              src="/imagez/yoga.png"
+              class="img-fluid rounded"
+              alt="woman streching in tree pose yoga"
+            />
+          </div>
+          <div class="column col-sm-6">
+            <h4 class="mb-3">Yoga app</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5">
+              <a
+                class="primary-link text-white"
+                href="#"
+                title="learn yoga poses"
+                >Launch Yoga App</a
+              >
+            </div>
           </div>
         </div>
-        <div class="column col-sm-6">
-          <h4 class="mb-3">Weather App</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <div class="mt-5">
-            <a class="primary-link text-white" href="#" title="find weather"
-              >Launch Weather App</a
-            >
+
+        <div class="weather-container">
+          <div class="column col-sm-6">
+            <h4 class="mb-3">Weather App</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5">
+              <a class="primary-link text-white" href="#" title="find weather"
+                >Launch Weather App</a
+              >
+            </div>
           </div>
         </div>
         <div class="column col-sm-6">
@@ -223,12 +254,14 @@
             eos eveniet alias temporibus deserunt veritatis minima fugiat
             explicabo eum dolore.
           </p>
-          <a
-            class="primary-link text-white"
-            href="#"
-            title="launch the yogurt app"
-            >Launch Yogurt App</a
-          >
+          <div class="yogurt-bttn">
+            <a
+              class="primary-link text-white"
+              href="#"
+              title="launch the yogurt app"
+              >Launch Yogurt App</a
+            >
+          </div>
         </div>
       </div>
     </div>
