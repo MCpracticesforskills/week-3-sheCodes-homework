@@ -70,6 +70,27 @@
       font-size: 18px;
       line-height: 1.5;
     }
+    @media (max-width: 400px) {
+      .navbar-brand {
+        margin-left: 20px;
+      }
+      h1 {
+        font-size: 48px;
+        margin: 20px;
+      }
+      h3 {
+        font-size: 28px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      #contact-me {
+        font-size: 32px;
+      }
+      .contact-me-link {
+        display: block;
+        font-size: 20px;
+      }
+    }
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -101,7 +122,9 @@
         </ul>
       </div>
     </nav>
-    <a class="to-home-link" href="/index.html">Back to Homepage</a>
+    <a class="to-home-link" href="/index.html" title="go back to homepage"
+      >Back to Homepage</a
+    >
     <h1>About Me</h1>
     <h3>Technical Writer from Silicon Valley, California</h3>
     <div class="about-paragraphs text-center m-5">
@@ -126,7 +149,10 @@
 
     <div class="contacts text-center m-5">
       <h2 id="contact-me">📮Contact Me</h2>
-      <a class="contact-me-link" href="mailto:morganventures22@gmail.com"
+      <a
+        class="contact-me-link"
+        href="mailto:morganventures22@gmail.com"
+        title="contact Morgan for more information about front-end development"
         >morganventures22@gmail.com</a
       >
     </div>
